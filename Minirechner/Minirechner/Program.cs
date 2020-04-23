@@ -9,6 +9,13 @@ namespace Minirechner
             int ErgAddition = Zahl1 + Zahl2;
             return ErgAddition;
         }
+
+        static int Subtrahieren(int Zahl1, int Zahl2)
+        {
+            int ErgAddition = Zahl1 - Zahl2;
+            return ErgAddition;
+        }
+
         
 
         static void Main(string[] args)
@@ -29,8 +36,8 @@ namespace Minirechner
            
             Console.Write("Addieren: "); Console.WriteLine(Addieren(Zahl1, Zahl2));
             
-            Console.Write("Subtrahieren: ");
-            
+            Console.Write("Subtrahieren: "); Console.WriteLine(Subtrahieren(Zahl1, Zahl2));
+
             Console.Write("Multiplizieren: ");
             
             Console.Write("Dividieren: ");
