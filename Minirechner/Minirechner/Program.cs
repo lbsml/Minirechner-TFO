@@ -4,7 +4,11 @@ namespace Minirechner
 {
     class Program
     {
-        
+        static int Addieren(int Zahl1,int Zahl2)
+        {
+            int ErgAddition = Zahl1 + Zahl2;
+            return ErgAddition;
+        }
         
 
         static void Main(string[] args)
@@ -17,16 +21,19 @@ namespace Minirechner
 
             Console.WriteLine("Minirechner-TFO");
             Console.WriteLine();
-            Console.WriteLine("Bitte geben Sie die erste Zahl ein: ");
+            Console.Write("Bitte geben Sie die erste Zahl ein: ");
             Zahl1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Bitte geben Sie die zweite Zahl ein: ");
+            Console.Write("Bitte geben Sie die zweite Zahl ein: ");
             Zahl2 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine();
-            Console.WriteLine("Wählen Sie die gewünschte Grundrechnungsart aus!);
-            Console.WriteLine("1    Addieren");
-            Console.WriteLine("2    Subtrahieren");
-            Console.WriteLine("3    Multiplizieren");
-            Console.WriteLine("4    Dividieren");
+           
+            Console.Write("Addieren: "); Console.WriteLine(Addieren(Zahl1, Zahl2));
+            
+            Console.Write("Subtrahieren: ");
+            
+            Console.Write("Multiplizieren: ");
+            
+            Console.Write("Dividieren: ");
             Console.ReadKey();
         }
     }
