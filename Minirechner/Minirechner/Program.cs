@@ -22,7 +22,12 @@ namespace Minirechner
             return ErgAddition;
         }
 
-        
+        static int Dividieren(int Zahl1, int Zahl2)
+        {
+            int ErgAddition = Zahl1 / Zahl2;
+            return ErgAddition;
+        }
+
         static void Main(string[] args)
         {
             int Zahl1 = 0;
@@ -45,7 +50,7 @@ namespace Minirechner
 
             Console.Write("Multiplizieren: "); Console.WriteLine(Multiplizieren(Zahl1, Zahl2));
 
-            Console.Write("Dividieren: ");
+            Console.Write("Dividieren: "); Console.WriteLine(Dividieren(Zahl1, Zahl2));
             Console.ReadKey();
         }
     }
